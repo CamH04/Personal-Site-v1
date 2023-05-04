@@ -1,0 +1,95 @@
+
+/* CIRCLE STUFF*/
+.WholeCircle{
+  position: relative;
+  padding-left: 130px;
+  top: 194px;
+}
+.CircleFore{
+  position: absolute ;
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+  background: conic-gradient(from 254.51deg at 102.78% 88%, rgba(153, 12, 220, 0.5) 0deg, rgba(255, 2, 154, 0.5) 28.31deg, rgba(153, 12, 220, 0) 294.38deg, rgba(153, 12, 220, 0.5) 360deg);  
+}
+.CircleBack{
+  position: absolute ;
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+  background-color: #D9D9D9;
+}
+/* TEXT STYLES */
+.text{
+  position: absolute;
+  margin-left: 600px;
+  margin-top: 265px;
+  padding: 30px;
+}
+#phara{
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #dfdfdf;
+}
+/* im so sorry */
+p , #phara , span, .text{
+  background: #2F2F2F;
+}
+
+/* animation for the gradient */
+@keyframes background-pan {
+  from {
+      background-position: 0% center;
+  }
+
+  to {
+      background-position: -200% center;
+  }
+}
+.magic-text{
+  animation: background-pan 3s linear infinite;
+  background: linear-gradient( to right, rgb(183, 71, 235), rgb(252, 59, 174));
+  background-size: 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  white-space: nowrap;
+}
+
+/* Buttons */
+.Buttons{
+  position: absolute;
+  display: flex;
+  justify-content: space-evenly;
+  background: #2F2F2F;
+}
+button{
+  width: 220px;
+  height: 68px;
+  border-radius: 25px;
+  background: #2F2F2F;
+  border-color: #2F2F2F;
+  margin: 40px;
+  cursor: pointer;
+  border: none;
+}
+.Button-Text{
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+}
+.LinkedIn{
+  background: #C474A4;
+}
+.Cv{
+  background: #B14B89;
+}
+.Github{
+  color: #dfdfdf;
+  background-color: #1A1A1A;
+}
+.button-back{
+  background: #2F2F2F;
+}
